@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
     
-  deploy:
+  srv1:
     if: github.ref == 'refs/heads/main'
     runs-on: [ubuntu-latest]
     steps:
@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER_PASSWORD }} | sudo -S git pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git
-  deploy2:
+  srv2:
     if: github.ref == 'refs/heads/main'
     runs-on: [ubuntu-latest]
     steps:
@@ -28,5 +28,5 @@ jobs:
           host: ${{ secrets.SERVER2_IP }}
           username: ${{ secrets.SERVER2_USERNAME }}
           password: ${{ secrets.SERVER2_PASSWORD }}
-          script: |
-                  cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER2_PASSWORD }} | git pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git
+          script: cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER2_PASSWORD }} | 
+                  pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git

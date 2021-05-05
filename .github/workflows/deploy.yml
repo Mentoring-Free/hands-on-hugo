@@ -3,6 +3,17 @@ name: CI
 on: [push]
 
 jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: docker-practice/actions-setup-docker@master
+    - run: |
+        set -x
+
+        docker version
+
+        docker run --rm hello-world
+    
   deploy:
     if: github.ref == 'refs/heads/main'
     runs-on: [ubuntu-latest]

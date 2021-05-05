@@ -33,13 +33,13 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Push to server
-      - uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
           port: 22022
           host: ${{ secrets.SERVER2_IP }}
           username: ${{ secrets.SERVER2_USERNAME }}
           password: ${{ secrets.SERVER2_PASSWORD }}
-          script: cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER_PASSWORD }} | git pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git     
+          script: cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER_PASSWORD }} | git pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git
     # Docker Compose test
       - uses: actions/checkout@v1
       - name: Build the docker-compose stack

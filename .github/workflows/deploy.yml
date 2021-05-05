@@ -22,4 +22,4 @@ jobs:
 
           docker version
 
-          docker run --rm hello-world
+          docker run hello-world

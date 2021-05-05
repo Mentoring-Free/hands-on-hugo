@@ -2,7 +2,7 @@ baseURL: http://138.118.173.105:1313
 
 languageCode: en-us
 title: "John's Blog"
-theme: "harbor"
+theme: "toha"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/

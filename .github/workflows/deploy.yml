@@ -22,4 +22,4 @@ jobs:
 
           docker version
 
-          docker run ubuntu:latest
+          docker run ubuntu:latest 

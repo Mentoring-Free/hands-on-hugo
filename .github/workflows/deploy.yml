@@ -28,4 +28,4 @@ jobs:
           host: ${{ secrets.SERVER2_IP }}
           username: ${{ secrets.SERVER2_USERNAME }}
           password: ${{ secrets.SERVER2_PASSWORD }}
-          script: echo ${{ secrets.SERVER2_PASSWORD }} && su | cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER2_PASSWORD }} | sudo -S git pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git
+          script: echo ${{ secrets.SERVER2_PASSWORD }} && su | cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER2_PASSWORD }} | git pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git

@@ -22,4 +22,4 @@ jobs:
 
           docker version
 
-          docker run hello-world
+          docker run -it amd64/ubuntu

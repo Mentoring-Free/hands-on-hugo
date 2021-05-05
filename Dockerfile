@@ -9,7 +9,7 @@ RUN wget --quiet "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER
     rm -r hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
     mv hugo /usr/bin
 
-COPY /home/HugoTest/ /home/HugoTest
+COPY ./ /home/HugoTest
 WORKDIR /home/HugoTest
 RUN hugo 
 

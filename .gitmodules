@@ -1,3 +1,6 @@
 [submodule "themes/themes/harbor"]
 	path = themes/themes/harbor
 	url = https://github.com/matsuyoshi30/harbor.git
+[submodule "themes/harbor"]
+	path = themes/harbor
+	url = https://github.com/matsuyoshi30/harbor.git

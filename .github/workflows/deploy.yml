@@ -24,6 +24,7 @@ jobs:
       - name: Push to server
         uses: appleboy/ssh-action@master
         with:
+          port: 22022
           host: ${{ secrets.SERVER2_IP }}
           username: ${{ secrets.SERVER2_USERNAME }}
           password: ${{ secrets.SERVER2_PASSWORD }}

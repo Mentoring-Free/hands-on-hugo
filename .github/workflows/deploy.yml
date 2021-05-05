@@ -16,10 +16,10 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: cd ${{ secrets.PROJECT_PATH }} && echo ${{ secrets.SERVER_PASSWORD }} | sudo -S git pull https://${{ secrets.TOKEN }}@github.com/SinesioBittencourt-StudyGuide/HugoTest.git
-      - uses: docker-practice/actions-setup-docker@master
-      - run: |
-          set -x
-
-          docker version
-
-          docker run ubuntu:latest 
+#      - uses: docker-practice/actions-setup-docker@master
+#      - run: |
+#          set -x
+#
+#          docker version
+#
+#          docker run ubuntu:latest 

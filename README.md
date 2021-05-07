@@ -1,6 +1,6 @@
 [![CI](https://github.com/SinesioBittencourt-StudyGuide/HugoTest/actions/workflows/deploy.yml/badge.svg)](https://github.com/SinesioBittencourt-StudyGuide/HugoTest/actions/workflows/deploy.yml)
 
-# Continuously Deploy Hugo with GitHub Actions, Docker and LetsCloud
+# Continuously Deploy Hugo with GitHub Actions and LetsCloud
 
 Post Original:
 https://www.letscloud.io/community/continuously-deploy-hugo-with-github-actions-docker-and-letscloud

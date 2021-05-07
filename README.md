@@ -1,8 +1,11 @@
 [![CI](https://github.com/SinesioBittencourt-StudyGuide/HugoTest/actions/workflows/deploy.yml/badge.svg)](https://github.com/SinesioBittencourt-StudyGuide/HugoTest/actions/workflows/deploy.yml)
 
 # Continuously Deploy Hugo with GitHub Actions, Docker and LetsCloud
+
+Post Original:
 https://www.letscloud.io/community/continuously-deploy-hugo-with-github-actions-docker-and-letscloud
 
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/sinesiobittencourt/)
 ---
 
 ## Introduction

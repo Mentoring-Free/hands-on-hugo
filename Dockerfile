@@ -1,4 +1,4 @@
-FROM nginx:alpine as build
+FROM nginx:1.21-alpine as build
 
 RUN apk add --update \
     wget
